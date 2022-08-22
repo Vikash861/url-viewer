@@ -1,0 +1,80 @@
+/* font-family: 'Lora', serif; */
+:root{
+    --primaryBgColor:#F2F2F2;
+    --buttonBgColor:#DADADA;
+    --buttonColor:#303030;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:var(--primaryBgColor);
+}
+/* #root{
+    display:flex;
+    justify-content:center
+
+} */
+#root h1{
+    font-family: 'Lora',serif;
+    font-size: 80px;
+    text-align: center;
+    color: var(--buttonColor);
+    margin-top: 10vh;
+}
+
+#root form{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#root form input{
+/* margin-top: 50px; */
+max-width: 479px;
+height: 50px;
+font-size:1.5rem;
+padding: 5px 10px 5px 10px;
+border: none;
+outline: none;
+color: var(--buttonColor);
+background-color: var(--buttonBgColor);
+border-radius:10px;
+margin: 10px;
+}
+#root form input:focus{
+    border: 3px solid var(--buttonColor);
+}
+
+#root form button{
+margin: 10px;
+font-family: 'Lora',serif;
+border: none;
+font-size: 1.5rem;
+color: var(--buttonColor);
+border-radius:10px;
+width:153px;
+height:58px;
+padding: 5px 10px 5px 10px;
+background-color: var(--buttonBgColor);
+cursor: pointer;
+}
+#root form button:hover{
+    border: 3px solid var(--buttonColor);
+}
+
+
+/* ==============================small devices================================= */
+@media only screen and (max-width:600px){
+    #root h1{
+        font-size:40px;
+    }
+    #root form input{
+        /* margin-top: 50px; */
+        max-width: 250px;
+    }
+    #root form button{
+        width:100px;
+        font-size: 1rem;
+    }
+}
